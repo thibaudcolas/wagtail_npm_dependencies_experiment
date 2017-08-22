@@ -1,0 +1,4 @@
+include LICENSE *.rst *.txt *.md
+recursive-include wagtail_npm_dependencies_experiment *
+global-exclude __pycache__
+global-exclude *.py[co]
