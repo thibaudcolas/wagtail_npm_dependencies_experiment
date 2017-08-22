@@ -1,0 +1,31 @@
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/variables';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/variables-icons';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/mixins';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/grid';
+
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/icons';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/typography';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/tabs';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/dropdowns';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/modals';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/forms';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/listing';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/messages';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/formatters';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/header';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/progressbar';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/datetimepicker';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/main-nav';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/indicator';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/tooltips';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/components/logo';
+
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/fonts';
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/font-icons';
+
+@import 'tools.breakpoints';
+@import 'objects';
+@import 'components';
+@import 'utilities';
+
+@import '../../wagtail/wagtailadmin/static_src/wagtailadmin/scss/core'

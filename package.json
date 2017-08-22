@@ -2,6 +2,7 @@
   "name": "@wagtail/npm_dependencies_experiment",
   "version": "0.1.0",
   "repository": "https://github.com/springload/wagtail_npm_dependencies_experiment",
+  "license": "MIT",
   "babel": {
     "presets": [
       [
@@ -49,14 +50,9 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "~3.0.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "~1.5.2",
-    "gulp-util": "~2.2.14",
     "jest": "^20.0.4",
     "mustache": "^2.2.1",
+    "node-sass-chokidar": "0.0.3",
     "react-addons-perf": "^15.4.2",
     "react-test-renderer": "^15.5.4",
     "redux-mock-store": "^1.2.2",
@@ -78,8 +74,9 @@
   },
   "scripts": {
     "postinstall": "npm --prefix client install",
+    "build:css": "node-sass-chokidar client/scss -o client/dist",
     "build": "webpack --config ./client/webpack/prod.config.js",
-    "build:lib": "babel client/src -d client/es && BABEL_ENV=test babel client/src -d client/dist",
+    "build:lib": "babel client/src -d client/es && BABEL_ENV=test babel client/src -d client/dist && npm run build:css",
     "watch": "webpack --config ./client/webpack/dev.config.js",
     "start": "npm run watch",
     "lint:js": "eslint --max-warnings 16 ./client",

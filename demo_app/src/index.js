@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { initExplorer } from 'wagtail';
+import 'wagtail/dist/wagtail.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
