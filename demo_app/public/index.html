@@ -21,53 +21,57 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body id="wagtail">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="wrapper">
+      <div class="nav-wrapper">
+          <div class="inner">
+            <nav class="nav-main">
+              <ul>
+              <li class="menu-item" data-explorer-menu-item>
+                  <a href="#" class="icon icon-folder-open-inverse" data-explorer-start-page="1">Pages</a>
+              </li>
+            </ul>
+            </nav>
+          </div>
+          <div class="explorer__wrapper" data-explorer-menu></div>
+      </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <div data-explorer-menu></div>
-    <button class="c-explorer__close">Close explorer</button>
-    <div>
-        <div data-explorer-start-page="3">Open explorer</div>
+      <div class="content-wrapper">
+          <div id="root"></div>
+      </div>
     </div>
+
     <script>
-      window.wagtailConfig = {
-        ADMIN_API: {
-          DOCUMENTS: '/admin/api/v2beta/documents/',
-          IMAGES: '/admin/api/v2beta/images/',
-          PAGES: '/admin/api/v2beta/pages/',
-          EXTRA_CHILDREN_PARAMETERS: '',
-        },
-        ADMIN_URLS: {
-          PAGES: '/admin/pages/',
-        },
-        DATE_FORMATTING: {
-          DATE_FORMAT: 'MMM. D, YYYY',
-          SHORT_DATE_FORMAT: 'DD/MM/YYYY',
-        },
-        STRINGS: {
-          EDIT: 'Edit',
-          PAGE: 'Page',
-          PAGES: 'Pages',
-          LOADING: 'Loading...',
-          SERVER_ERROR: 'Server Error',
-          NO_RESULTS: 'No results',
-          SEE_CHILDREN: 'See children',
-          SEE_ALL: 'See all',
-          CLOSE_EXPLORER: 'Close explorer',
-        },
-      };
-    </script>
-  </body>
+        window.wagtailConfig = {
+          ADMIN_API: {
+            DOCUMENTS: '#v2beta/documents/',
+            IMAGES: '#v2beta/images/',
+            PAGES: '/pages-stub.json',
+            EXTRA_CHILDREN_PARAMETERS: '',
+          },
+          ADMIN_URLS: {
+            PAGES: '#',
+          },
+          DATE_FORMATTING: {
+            DATE_FORMAT: 'MMM. D, YYYY',
+            SHORT_DATE_FORMAT: 'DD/MM/YYYY',
+          },
+          STRINGS: {
+            EDIT: 'Edit',
+            PAGE: 'Page',
+            PAGES: 'Pages',
+            LOADING: 'Loading...',
+            SERVER_ERROR: 'Server Error',
+            NO_RESULTS: 'No results',
+            SEE_CHILDREN: 'See children',
+            SEE_ALL: 'See all',
+            CLOSE_EXPLORER: 'Close explorer',
+          },
+        };
+      </script>
+</body>
 </html>

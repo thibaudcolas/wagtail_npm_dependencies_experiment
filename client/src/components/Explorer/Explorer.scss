@@ -1,11 +1,11 @@
 // scss-lint:disable DeclarationOrder
 
-$c-explorer-bg: #4c4e4d;
-$c-explorer-bg-dark: $color-grey-1;
-$c-explorer-bg-active: rgba(0, 0, 0, 0.425);
-$c-explorer-secondary: #a5a5a5;
-$c-explorer-easing: cubic-bezier(0.075, 0.82, 0.165, 1);
-$menu-footer-height: 50px;
+$c-explorer-bg: #4c4e4d !default;
+$c-explorer-bg-dark: $color-grey-1 !default;
+$c-explorer-bg-active: rgba(0, 0, 0, 0.425) !default;
+$c-explorer-secondary: #EFCDCD !default;
+$c-explorer-easing: cubic-bezier(0.075, 0.82, 0.165, 1) !default;
+$menu-footer-height: 50px !default;
 
 @import 'ExplorerItem';
 

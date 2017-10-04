@@ -1,0 +1,12 @@
+$font-root: '../node_modules/wagtail/dist/';
+$color-grey-1: #aaa;
+$c-explorer-bg: #eee;
+$color-menu-text: #333;
+
+@import '../node_modules/wagtail/scss/wagtail';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

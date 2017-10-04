@@ -1,0 +1,84 @@
+// paths
+
+// We can't use absolute paths here, because those are dependent on Django's
+// STATIC_URL setting. Instead, relative paths from the final location of the
+// compiled CSS files are used.
+// */
+
+$static-root: '../../' !default;
+$images-root: $static-root + 'wagtailadmin/images/' !default;
+$font-root: './' !default;
+
+// grid settings
+$grid-columns: 12 !default;
+$grid-gutter-width: 3% !default;
+$grid-max-width: 1200px !default;
+$grid-content-indent: 0.7 !default;
+
+$mobile-nice-padding: 20px !default;
+$desktop-nice-padding: 50px !default;
+
+// screen breakpoints
+$breakpoint-mobile: 50em; // 800px
+$breakpoint-desktop-small: 56.25em; // 900px
+$breakpoint-desktop-large: 75em; // 1200px
+$breakpoint-desktop-larger: 100em; // 1600px
+
+// colours
+$color-teal: #43b1b0 !default;
+$color-teal-darker: darken($color-teal, 10%) !default;
+$color-teal-dark: #246060 !default;
+$color-blue: #71b2d4 !default;
+$color-red: #cd3238 !default;
+$color-orange: #e9b04d !default;
+$color-green: #189370 !default;
+$color-salmon: #f37e77 !default;
+$color-salmon-light: #fcf2f2 !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
+
+// darker to lighter
+$color-grey-1: #333 !default;
+$color-grey-1-1: #404040 !default;
+$color-grey-2: #666 !default;
+$color-grey-3: #d9d9d9 !default;
+$color-grey-4: #e6e6e6 !default;
+$color-grey-5: #fafafa !default;
+
+$color-menu-text: #cacaca !default; // was #aaa wich was too low contrast
+
+$color-thead-bg: $color-grey-5 !default;
+$color-header-bg: $color-teal; // #ff6a58 !default;
+$color-fieldset-hover: $color-grey-5 !default;
+$color-input-border: $color-grey-4 !default;
+$color-input-focus: #f4fcfc !default;
+$color-input-error-bg: #feedee !default;
+$color-button: $color-teal !default;
+$color-button-hover: $color-teal-darker !default;
+$color-button-yes: $color-green !default;
+$color-button-yes-hover: darken($color-button-yes, 8%) !default;
+$color-button-no: $color-red !default;
+$color-button-no-hover: darken($color-button-no, 20%) !default;
+$color-button-warning: $color-orange !default;
+$color-button-warning-hover: darken($color-orange, 20%) !default;
+$color-link: $color-teal !default;
+$color-link-hover: $color-teal-dark !default;
+
+$color-text-base: $color-grey-2 !default;
+$color-text-input: $color-grey-1 !default;
+
+// Color states
+$color-state-live: #59b524 !default;
+$color-state-draft: #808080 !default;
+$color-state-absent: #ff8f11 !default;
+$color-state-live-draft: #43b1b0 !default;
+
+// Fonts
+$font-sans: Open Sans, Arial, sans-serif !default;
+$font-serif: Roboto Slab, Georgia, serif !default;
+
+// misc sizing
+$thumbnail-width: 130px !default;
+$menu-width: 180px !default;
+$menu-width-max: 320px !default;
+$mobile-nav-indent: 50px !default;

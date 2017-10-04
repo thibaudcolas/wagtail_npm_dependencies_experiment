@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "total_count": 5
+    },
+    "items": [
+        {
+            "id": 4,
+            "meta": {
+                "type": "demo.EventIndexPage",
+                "detail_url": "http://localhost/admin/api/v2beta/pages/4/",
+                "html_url": "http://localhost/events-index/",
+                "slug": "events-index",
+                "first_published_at": null,
+                "latest_revision_created_at": null,
+                "status": {
+                    "status": "live",
+                    "live": true,
+                    "has_unpublished_changes": false
+                },
+                "children": {
+                    "count": 2,
+                    "listing_url": "http://localhost/admin/api/v2beta/pages/?child_of=4"
+                }
+            },
+            "title": "Events index",
+            "admin_display_title": "Events index"
+        },
+        {
+            "id": 5,
+            "meta": {
+                "type": "demo.BlogIndexPage",
+                "detail_url": "http://localhost/admin/api/v2beta/pages/5/",
+                "html_url": "http://localhost/blog-index/",
+                "slug": "blog-index",
+                "first_published_at": "2017-08-11T00:17:33.344258Z",
+                "latest_revision_created_at": "2017-08-11T00:17:33.309892Z",
+                "status": {
+                    "status": "live",
+                    "live": true,
+                    "has_unpublished_changes": false
+                },
+                "children": {
+                    "count": 3,
+                    "listing_url": "http://localhost/admin/api/v2beta/pages/?child_of=5"
+                }
+            },
+            "title": "Blog index",
+            "admin_display_title": "Blog index"
+        },
+        {
+            "id": 6,
+            "meta": {
+                "type": "demo.StandardIndexPage",
+                "detail_url": "http://localhost/admin/api/v2beta/pages/6/",
+                "html_url": "http://localhost/standard-index/",
+                "slug": "standard-index",
+                "first_published_at": null,
+                "latest_revision_created_at": null,
+                "status": {
+                    "status": "live",
+                    "live": true,
+                    "has_unpublished_changes": false
+                },
+                "children": {
+                    "count": 4,
+                    "listing_url": "http://localhost/admin/api/v2beta/pages/?child_of=6"
+                }
+            },
+            "title": "Standard index",
+            "admin_display_title": "Standard index"
+        },
+        {
+            "id": 20,
+            "meta": {
+                "type": "demo.StandardIndexPage",
+                "detail_url": "http://localhost/admin/api/v2beta/pages/20/",
+                "html_url": "http://localhost/people/",
+                "slug": "people",
+                "first_published_at": null,
+                "latest_revision_created_at": null,
+                "status": {
+                    "status": "live",
+                    "live": true,
+                    "has_unpublished_changes": false
+                },
+                "children": {
+                    "count": 2,
+                    "listing_url": "http://localhost/admin/api/v2beta/pages/?child_of=20"
+                }
+            },
+            "title": "People",
+            "admin_display_title": "People"
+        },
+        {
+            "id": 12,
+            "meta": {
+                "type": "demo.ContactPage",
+                "detail_url": "http://localhost/admin/api/v2beta/pages/12/",
+                "html_url": "http://localhost/contact-page/",
+                "slug": "contact-page",
+                "first_published_at": null,
+                "latest_revision_created_at": null,
+                "status": {
+                    "status": "live",
+                    "live": true,
+                    "has_unpublished_changes": false
+                },
+                "children": {
+                    "count": 0,
+                    "listing_url": "http://localhost/admin/api/v2beta/pages/?child_of=12"
+                }
+            },
+            "title": "Contact page",
+            "admin_display_title": "Contact page"
+        }
+    ],
+    "__types": {
+        "demo.EventIndexPage": {
+            "verbose_name": "event index page",
+            "verbose_name_plural": "event index pages"
+        },
+        "demo.BlogIndexPage": {
+            "verbose_name": "blog index page",
+            "verbose_name_plural": "blog index pages"
+        },
+        "demo.StandardIndexPage": {
+            "verbose_name": "standard index page",
+            "verbose_name_plural": "standard index pages"
+        },
+        "demo.ContactPage": {
+            "verbose_name": "contact page",
+            "verbose_name_plural": "contact pages"
+        }
+    }
+}
