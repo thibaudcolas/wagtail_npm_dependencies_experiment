@@ -2,7 +2,7 @@
 // Transitions
 // =============================================================================
 
-$c-transition-duration: 200ms;
+$c-transition-duration: 200ms !default;
 
 .c-transition-group {
     position: absolute;
